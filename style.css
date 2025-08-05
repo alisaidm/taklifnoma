@@ -1,0 +1,86 @@
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f6f8fc, #e8ecf4);
+  color: #2e3a59;
+}
+
+header {
+  background-color: #3f4c6b;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.hero {
+  background: url('https://cdn.vectorstock.com/i/1000v/02/75/uzbek-traditional-seamless-pattern-vector-47300275.jpg') center center/cover no-repeat;
+  height: 400px;
+  border-bottom: 5px solid #6d7fa3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 1.5rem;
+  color: #2e3a59;
+}
+
+.details p {
+  font-size: 1.2rem;
+  margin: 0.6rem 0;
+}
+
+.highlight-name {
+  color: #5d6d95;
+}
+
+.rsvp button {
+  background-color: #6d7fa3;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rsvp button:hover {
+  background-color: #3f4c6b;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #e8ecf4;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+  color: #2e3a59;
+}
+
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .container h2 {
+    font-size: 1.8rem;
+  }
+}

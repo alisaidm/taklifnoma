@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taklifnoma</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Libre Baskerville', serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f6f8fc, #e8ecf4);
+      color: #2e3a59;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #3f4c6b;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      background: url('images/background.jpg') center center/cover no-repeat;
+      height: 300px;
+      border-bottom: 5px solid #6d7fa3;
+      position: relative;
+    }
+
+    .container {
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    .container h2 {
+      font-size: 1.5rem;
+      color: #2e3a59;
+    }
+
+    .details p {
+      font-size: 1.2rem;
+      margin: 0.6rem 0;
+      line-height: 1.6;
+    }
+
+    .highlight-name {
+      font-family: 'Magic sans', cursive;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #5d6d95;
+    }
+
+    .location-link {
+      margin-top: 2rem;
+      display: inline-block;
+      font-size: 1.1rem;
+      background-color: #6d7fa3;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .location-link:hover {
+      background-color: #3f4c6b;
+    }
+
+    .rsvp button {
+      background-color: #6d7fa3;
+      font-family: 'Libre Baskerville', serif;
+      color: white;
+      border: none;
+      padding: 0.9rem 1.8rem;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .rsvp button:hover {
+      background-color: #3f4c6b;
+    }
+
+    footer {
+      background-color: #e8ecf4;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      margin-top: 3rem;
+      color: #2e3a59;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Taklifnoma</h1>
+  </header>
+
+  <section class="hero">
+    <div class="image-container">
+      <img src="images/otabek.jpg" alt="Otabek O‘roqov"
+        style="width: 160px; height: 160px; border-radius: 50%; position: absolute; bottom: -80px; left: 50%; transform: translateX(-50%); box-shadow: 0 0 15px rgba(0,0,0,0.3); border: 5px solid white;" />
+    </div>
+  </section>
+
+  <section class="container" style="margin-top: 100px;">
+    <div class="details">
+      <h2>Assalomu alaykum hurmatli <span id="guest-name">mehmon</span>!</h2>
+      <p>
+        Sizni aziz farzandimiz <span class="highlight-name">"Otabek O‘roqov"</span> ning sunnat to‘yi munosabati bilan
+        <strong>18.08.2025</strong> kuni, soat <strong>12:00</strong> da yoziladigan dasturxonimizga lutfan taklif
+        etamiz.
+      </p>
+      <p><strong>Xurmat va ehtirom bilan <span class="highlight-name">O'roq bobo o'g'li Sherali aka Nazarov</span> xonadoni</strong></p>
+      <p><strong>📍 Manzil:</strong> Qumqo‘rg‘on tumani, “Visol oqshomi” to‘yxonasi, pastgi qavati</p>
+    </div>
+
+    <a class="location-link" href="https://maps.google.com/?q=Visol+oqshomi+toyxonasi+Qumqorgon" target="_blank">📍
+      Joylashuvni ko‘rish</a>
+
+    <div class="rsvp">
+      <p><strong>Iltimos, tashrifingizni tasdiqlang:</strong></p>
+      <button onclick="sendRSVP()">Kelaman!</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 | Otabek O‘roqov sunnat to‘yi | Qumqo‘rg‘on tumani
+  </footer>
+
+  <audio id="background-audio" autoplay loop>
+    <source src="music/Toybola.mp3" type="audio/mpeg">
+  </audio>
+
+  
+
+</body>
+</html>
